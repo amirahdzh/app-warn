@@ -91,6 +91,78 @@ Jika ingin mengganti gambar background pada peringatan:
 
 ---
 
+
+---
+
+## 🚀 Cara Menggunakan  
+
+### 1️⃣ **Download atau Clone Repo Ini**  
+Buka PowerShell atau Command Prompt, lalu jalankan:  
+```sh
+git clone https://github.com/username/aplikasi-warning.git
+cd aplikasi-warning
+```
+
+---
+
+### 2️⃣ **Ubah Nama File & Copy Path-nya**  
+- Setelah diunduh, cari file **`AppWarning.ps1.txt`**  
+- **Ubah namanya** menjadi **`AppWarning.ps1`**  
+  - Jika menggunakan CLI (Command Line), jalankan:  
+    ```sh
+    ren AppWarning.ps1.txt AppWarning.ps1
+    ```
+- **Copy Path AppWarning.ps1**  
+  - Untuk Windows: **Shift + Klik Kanan → Copy as Path**  
+  - Path ini akan digunakan di langkah berikutnya.
+
+---
+
+### 3️⃣ **Ubah Shortcut Aplikasi yang Akan Diberi Warning**  
+- Klik kanan pada shortcut aplikasi → **Properties**  
+- Pada kolom **Target**, ubah menjadi:  
+  ```sh
+  C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File "C:\Path\Ke\AppWarning.ps1" "C:\Path\Ke\Aplikasi.exe"
+  ```
+  📌 **Ganti `C:\Path\Ke\AppWarning.ps1` dengan path yang sudah dicopy di langkah 2.**
+
+  ![Edit Target Shortcut](assets/ss1.png)
+
+- **Contoh Sebelum & Sesudah pada shortcut Riot Client:**  
+  Sebelum perubahan, shortcut hanya berisi:  
+  ```sh
+  "C:\Riot Games\Riot Client\RiotClientServices.exe"
+  ```
+  Setelah diubah, menjadi:  
+  ```sh
+  C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File "C:\Users\amira\warn\AppWarning.ps1" "C:\Riot Games\Riot Client\RiotClientServices.exe"
+  ```
+
+  **Gambar Ilustrasi:**  
+  ![Ilustrasi](assets/ss2.png)
+  ![Ilustrasi](assets/ss3.png)
+  ![Ilustrasi](assets/ss4.png)
+  ![Ilustrasi](assets/ss5.png)
+
+---
+
+## 🛠️ Penjelasan Perintah  
+| **Bagian** | **Penjelasan** |  
+|------------|--------------|  
+| `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` | Menjalankan **PowerShell.exe** yang ada di sistem Windows. Ini memastikan skrip dijalankan dengan PowerShell, meskipun ada versi lain yang diinstal. |  
+| `-ExecutionPolicy Bypass` | Mengabaikan kebijakan eksekusi PowerShell sementara, memungkinkan skrip berjalan tanpa perlu mengubah pengaturan sistem secara permanen. |  
+| `-File "C:\Users\amira\warn\AppWarning.ps1"` | Menunjukkan **file skrip PowerShell** yang akan dijalankan. Dalam contoh ini, skrip ada di `C:\Users\amira\warn\AppWarning.ps1`. |  
+| `"C:\Path\Ke\Aplikasi.exe"` | Parameter tambahan yang dikirim ke skrip, yaitu path ke aplikasi yang ingin dijalankan setelah peringatan muncul. |  
+
+---
+
+<!--  
+## 🎬 Video Tutorial dan Demo  
+📺 **Tonton Tutorial di YouTube**: [Klik di sini](https://www.youtube.com/watch?v=contoh-link)  
+-->
+
+---
+
 ## 📜 Lisensi  
 **© 2025 Amiw Dzh**  
 Diberikan izin untuk menggunakan, menyalin, memodifikasi, menggabungkan, menerbitkan, mendistribusikan, memberikan lisensi, dan menjual salinan perangkat lunak ini.  
