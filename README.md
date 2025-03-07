@@ -39,7 +39,16 @@ cd aplikasi-warning
   ```sh
   C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File "C:\Path\Ke\AppWarning.ps1" "C:\Path\Ke\Aplikasi.exe"
   ```
-  📌 **Ganti `C:\Path\Ke\AppWarning.ps1` dengan path yang sudah disalin di langkah 2.**
+  Penjelasan script:
+  | **Bagian** | **Penjelasan** |  
+  |------------|--------------|  
+  | `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` | Menjalankan **PowerShell.exe** yang ada di sistem Windows. Ini memastikan skrip dijalankan dengan PowerShell, meskipun ada versi lain yang diinstal. |  
+  | `-ExecutionPolicy Bypass` | Mengabaikan kebijakan eksekusi PowerShell sementara, memungkinkan skrip berjalan tanpa perlu mengubah pengaturan sistem secara permanen. |  
+  | `-File "C:\Path\Ke\AppWarning.ps1"` | Menunjukkan **file skrip PowerShell** yang akan dijalankan. |  
+  | `"C:\Path\Ke\Aplikasi.exe"` | Parameter tambahan yang dikirim ke skrip, yaitu path ke aplikasi yang ingin dijalankan setelah peringatan muncul. |  
+
+  - 📌 **Ganti `C:\Path\Ke\AppWarning.ps1` dengan path yang sudah disalin di langkah 2.**
+  - 📌 **Untuk `C:\Path\Ke\AppWarning.ps1` biasanya sudah ada secara default, cukup tambahkan agar sesuai format.**
 - **Contoh Sebelum & Sesudah pada shortcut Riot Client:**  
   Sebelum perubahan, shortcut hanya berisi:  
   ```sh
