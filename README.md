@@ -31,15 +31,15 @@ cd aplikasi-warning
 ---
 
 ### 3️⃣ **Ubah Shortcut Aplikasi yang Akan Diberi Warning**  
-- Klik kanan pada shortcut aplikasi → **Properties**  
+- Klik kanan pada shortcut aplikasi → **Properties**
+
+  <img src="assets/ss1.png" width="400">
+
 - Pada kolom **Target**, ubah menjadi:  
   ```sh
   C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File "C:\Path\Ke\AppWarning.ps1" "C:\Path\Ke\Aplikasi.exe"
   ```
   📌 **Ganti `C:\Path\Ke\AppWarning.ps1` dengan path yang sudah disalin di langkah 2.**
-
-  <img src="assets/ss1.png" width="400">
-
 - **Contoh Sebelum & Sesudah pada shortcut Riot Client:**  
   Sebelum perubahan, shortcut hanya berisi:  
   ```sh
@@ -49,12 +49,6 @@ cd aplikasi-warning
   ```sh
   C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File "C:\Users\amira\warn\AppWarning.ps1" "C:\Riot Games\Riot Client\RiotClientServices.exe"
   ```
-
-  **Gambar Ilustrasi:**  
-  <img src="assets/ss2.png" width="400">
-  <img src="assets/ss3.png" width="400">
-  <img src="assets/ss4.png" width="400">
-  <img src="assets/ss5.png" width="400">
 
 ---
 
@@ -84,10 +78,15 @@ Jika ingin mengganti gambar background pada peringatan:
 
 ---
 
-<!--  
 ## 🎬 Video Tutorial dan Demo  
-📺 **Tonton Tutorial di YouTube**: [Klik di sini](https://www.youtube.com/watch?v=contoh-link)  
--->
+📺 **Tonton Tutorial di YouTube**: [Klik di sini](#)  
+
+**Gambar Ilustrasi:**  
+
+  <img src="assets/ss2.png" width="400">
+  <img src="assets/ss3.png" width="400">
+  <img src="assets/ss4.png" width="400">
+  <img src="assets/ss5.png" width="400">
 
 ---
 
