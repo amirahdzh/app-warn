@@ -77,20 +77,12 @@ Jika ingin mengganti gambar background pada peringatan:
 
 ---
 
-## 🛠️ Penjelasan Perintah  
-| **Bagian** | **Penjelasan** |  
-|------------|--------------|  
-| `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` | Menjalankan **PowerShell.exe** yang ada di sistem Windows. Ini memastikan skrip dijalankan dengan PowerShell, meskipun ada versi lain yang diinstal. |  
-| `-ExecutionPolicy Bypass` | Mengabaikan kebijakan eksekusi PowerShell sementara, memungkinkan skrip berjalan tanpa perlu mengubah pengaturan sistem secara permanen. |  
-| `-File "C:\Users\amira\warn\AppWarning.ps1"` | Menunjukkan **file skrip PowerShell** yang akan dijalankan. Dalam contoh ini, skrip ada di `C:\Users\amira\warn\AppWarning.ps1`. |  
-| `"C:\Path\Ke\Aplikasi.exe"` | Parameter tambahan yang dikirim ke skrip, yaitu path ke aplikasi yang ingin dijalankan setelah peringatan muncul. |  
+## 🎬 Video Demo  
+📺 **Tonton Demo**: [Klik di sini](https://www.facebook.com/share/v/1BYPK6NkMo/)  
 
 ---
 
-## 🎬 Video Tutorial dan Demo  
-📺 **Tonton Tutorial di YouTube**: [Klik di sini](https://www.facebook.com/share/v/1BYPK6NkMo/)  
-
-**Gambar Ilustrasi:**  
+## 🖼️ Ilustrasi 
 
   <img src="assets/ss2.png" width="400">
   <img src="assets/ss3.png" width="400">
